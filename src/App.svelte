@@ -19,7 +19,7 @@
 
 	main {
 		margin: 0 auto;
-		padding: 0 1em;
+		padding: 0 1em 5em;
 		text-align: center;
 
 		@include small {
