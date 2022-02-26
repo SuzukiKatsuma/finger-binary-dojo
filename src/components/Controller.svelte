@@ -9,6 +9,10 @@
   <button on:click={decimalNum.increment} disabled={30 < $decimalNum}>
     <p>＋</p>
   </button>
+  <br />
+  <button on:click={decimalNum.reset} class={30 < $decimalNum ? "" : "hide"}>
+    <p>0に戻す</p>
+  </button>
 </div>
 
 <style lang="scss">
@@ -19,5 +23,9 @@
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
+  }
+
+  .hide {
+    display: none;
   }
 </style>

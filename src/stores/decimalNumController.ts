@@ -19,7 +19,8 @@ function numControl() {
         n = 0;
       }
       return n;
-    })
+    }),
+    reset: () => set(0)
   }
 }
 
