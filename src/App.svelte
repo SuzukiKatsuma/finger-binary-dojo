@@ -7,6 +7,8 @@
 
 <Header />
 
+<div class="side-color" />
+
 <main>
 	<MainBoard />
 	<Controller />
@@ -15,7 +17,7 @@
 <Footer />
 
 <style lang="scss" type="text/scss">
-	@import "./styles/breakpoints";
+	@use "./styles/breakpoints" as *;
 
 	main {
 		margin: 0 auto;
@@ -24,6 +26,19 @@
 
 		@include small {
 			margin: 0;
+		}
+	}
+
+	.side-color {
+		box-sizing: border-box;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		width: 100%;
+
+		@include large {
+			border-left: 10vw solid #ff3e00;
+			border-right: 10vw solid #ff3e00;
 		}
 	}
 </style>
