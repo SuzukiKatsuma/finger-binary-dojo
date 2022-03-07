@@ -22,7 +22,7 @@
     text-align: center;
 
     @include small {
-      font-size: 2rem;
+      font-size: 12vw;
     }
   }
 </style>

@@ -19,6 +19,7 @@
   @use "../styles/button";
 
   .controller-wrapper {
+    overflow: hidden;
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -26,6 +27,7 @@
   }
 
   .hide {
-    display: none;
+    position: relative;
+    right: -10000px;
   }
 </style>
