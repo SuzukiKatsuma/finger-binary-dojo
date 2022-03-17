@@ -1,0 +1,4 @@
+#!/bin/bash
+readonly TODAY=`date +'%F'`
+
+sed -i -e "s/2[0-9]\{3\}-\(0[1-9]\|1[012]\)-\([012][0-9]\|3[01]\)/$TODAY/" public/sitemap.xml
