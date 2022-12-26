@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { decimalNum } from "../stores/decimalNumController";
+  import { decimalNum } from "../stores/decimalNumStores";
   import Hand from "./Hand.svelte";
 
   let binaryNum: number;
@@ -24,7 +24,7 @@
     border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 2.5em auto;
+    margin: 0.25em auto 2.5em;
     padding: 2em 0;
     place-items: center;
     width: 72%;

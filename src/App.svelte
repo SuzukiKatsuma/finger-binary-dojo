@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Header from "./components/Header.svelte";
+	import ModeController from "./components/ModeController.svelte";
 	import MainBoard from "./components/MainBoard.svelte";
-	import Controller from "./components/Controller.svelte";
+	import NumController from "./components/NumController.svelte";
 	import Footer from "./components/Footer.svelte";
 </script>
 
@@ -10,8 +11,9 @@
 <div class="side-color" />
 
 <main>
-	<MainBoard />
-	<Controller />
+  <ModeController />
+  <MainBoard />
+  <NumController />
 </main>
 
 <Footer />
