@@ -41,10 +41,7 @@ module.exports = {
 		svelte({
 			preprocess: sveltePreprocess({
 				sourceMap: !production,
-				sass: {
-					renderSync: true,
-					implementation: require('sass'),
-				},
+				sass: {},
 			}),
 			compilerOptions: {
 				// enable run-time checks when not in production
