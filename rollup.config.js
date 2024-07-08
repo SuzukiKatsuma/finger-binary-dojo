@@ -30,7 +30,7 @@ function serve() {
 	};
 }
 
-export default {
+module.exports = {
 	input: 'src/main.ts',
 	output: {
 		format: 'iife',
@@ -40,7 +40,11 @@ export default {
 	plugins: [
 		svelte({
 			preprocess: sveltePreprocess({
-				sourceMap: !production
+				sourceMap: !production,
+				sass: {
+					renderSync: true,
+					implementation: require('sass'),
+				},
 			}),
 			compilerOptions: {
 				// enable run-time checks when not in production
