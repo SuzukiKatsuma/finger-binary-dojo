@@ -5,23 +5,18 @@ const numController = () => {
 
   return {
     subscribe,
-    increment: () => update((n) => {
-      n++;
-      if (31 < n) {
-        n = 31;
-      }
-      return n;
-    })
-    ,
-    decrement: () => update((n) => {
-      n--;
-      if (n < 0) {
-        n = 0;
-      }
-      return n;
-    }),
-    reset: () => set(0)
-  }
-}
+    increment: () =>
+      update((n) => {
+        const updateNumber = Math.min(n + 1, 31);
+        return updateNumber;
+      }),
+    decrement: () =>
+      update((n) => {
+        const updateNumber = Math.max(n - 1, 0);
+        return updateNumber;
+      }),
+    reset: () => set(0),
+  };
+};
 
 export const decimalNum = numController();
