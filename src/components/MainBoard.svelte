@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { decimalNum } from "../stores/decimalNumStores";
-  import Hand from "./Hand.svelte";
+import { decimalNum } from "../stores/decimalNumStores";
+import Hand from "./Hand.svelte";
 
-  let binaryNum: number;
+let binaryNum: number;
 
-  $: binaryNum = Number($decimalNum.toString(2));
+$: binaryNum = Number($decimalNum.toString(2));
 </script>
 
 <div class="main-board">

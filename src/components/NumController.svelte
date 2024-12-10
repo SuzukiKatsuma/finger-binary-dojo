@@ -1,33 +1,33 @@
 <script lang="ts">
-  import { decimalNum } from "../stores/decimalNumStores";
-  import { currentMode } from "../stores/modeStores";
+import { decimalNum } from "../stores/decimalNumStores";
+import { currentMode } from "../stores/modeStores";
 
-  let interval: NodeJS.Timer;
+let interval: NodeJS.Timer;
 
-  const stopInterval = () => {
-    clearInterval(interval);
-    interval = null;
+const stopInterval = () => {
+  clearInterval(interval);
+  interval = null;
+};
+
+const autoIncrement = () => {
+  decimalNum.increment();
+
+  if (30 < $decimalNum) {
+    stopInterval();
   }
+};
 
-  const autoIncrement = () => {
-    decimalNum.increment();
-
-    if(30 < $decimalNum) {
-      stopInterval();
-    }
+const startAutoIncrement = () => {
+  if (!interval) {
+    interval = setInterval(autoIncrement, 1000);
   }
+};
 
-  const startAutoIncrement = () => {
-    if(!interval) {
-      interval = setInterval(autoIncrement, 1000);
-    }
+$: {
+  if ($currentMode === "manual") {
+    stopInterval();
   }
-
-  $: {
-    if($currentMode === "manual") {
-      stopInterval();
-    }
-  }
+}
 </script>
 
 <div class="controller-wrapper">

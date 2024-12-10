@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { currentMode } from "../stores/modeStores";
+import { currentMode } from "../stores/modeStores";
 </script>
 
 <div class="controller-wrapper">

@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Header from "./components/Header.svelte";
-	import ModeController from "./components/ModeController.svelte";
-	import MainBoard from "./components/MainBoard.svelte";
-	import NumController from "./components/NumController.svelte";
-	import Footer from "./components/Footer.svelte";
+import Footer from "./components/Footer.svelte";
+import Header from "./components/Header.svelte";
+import MainBoard from "./components/MainBoard.svelte";
+import ModeController from "./components/ModeController.svelte";
+import NumController from "./components/NumController.svelte";
 </script>
 
 <Header />

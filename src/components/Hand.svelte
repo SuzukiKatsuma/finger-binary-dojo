@@ -1,16 +1,16 @@
 <script lang="ts">
-  export let num: number = 0;
+export let num = 0;
 
-  const binary: boolean[] = new Array(5);
+const binary: boolean[] = new Array(5);
 
-  function setBinary(num: number) {
-    for (let i = 0; i < binary.length; i++) {
-      const digit = Math.pow(10, i);
-      binary[i] = 1 === Math.floor(num / digit) % 10;
-    }
+function setBinary(num: number) {
+  for (let i = 0; i < binary.length; i++) {
+    const digit = 10 ** i;
+    binary[i] = 1 === Math.floor(num / digit) % 10;
   }
+}
 
-  $: setBinary(num);
+$: setBinary(num);
 </script>
 
 <div class="hand-wrapper">
