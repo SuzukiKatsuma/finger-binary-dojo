@@ -4,26 +4,49 @@
 
 <img src="https://repository-images.githubusercontent.com/457063998/1c508225-f84e-4d5f-bf3d-14e58fd00cce" alt="二進指数え法道場" title="二進指数え法道場">
 
-## Tool Used
+
+## Features
+
+- 🤘 指を使った二進数の数え方を直感的に学べる
+- 👀 実際の手の動きで数値がどう変化するかを視覚的に体験できる
+- 🔢 10進数/2進数の変換を手軽に練習可能
+- 🔁 モード切替で様々な練習パターンに対応
+- 📱 スマホ・PCどちらでも快適に利用可能
+
+
+## Tech Stack
 
 [![Svelte](https://img.shields.io/badge/Svelte-fff.svg?logo=svelte&style=for-the-badge)](https://svelte.jp/)
 
-## Local Development
 
-1. git リポジトリをクローンする
+## Development
 
-2. 依存関係をインストールする
+### 0. 前提となる環境
+* Node.js (v22.2 or later)
+* Yarn
 
+### 1. インストール
 ```bash
+git clone https://github.com/SuzukiKatsuma/finger-binary-dojo.git
+cd finger-binary-dojo
 yarn install
 ```
 
-3. 開発環境をセットアップする
-
+### 2. 開発サーバー
 ```bash
 yarn dev
 ```
 
+### 3. ビルド
+```bash
+yarn build
+```
+
+
+## License
+このプロジェクトのライセンスは MIT ライセンスです。  
+詳細は [LICENSE](LICENSE) ファイルをご覧ください。
+
 ---
 
-気に入ってもらえたら、スターもよろしくお願いします！
+気に入ってもらえたら ⭐️ もよろしくお願いします！
