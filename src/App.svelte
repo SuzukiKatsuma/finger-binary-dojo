@@ -8,7 +8,7 @@ import NumController from "./components/NumController.svelte";
 
 <Header />
 
-<div class="side-color" />
+<div class="side-color"></div>
 
 <main>
   <ModeController />

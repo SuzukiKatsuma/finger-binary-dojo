@@ -14,15 +14,15 @@ $: setBinary(num);
 </script>
 
 <div class="hand-wrapper">
-  <div class="thumb" class:thumb-folding={binary[0] === true} />
+  <div class="thumb" class:thumb-folding={binary[0] === true}></div>
 
   <div>
-    <div class="first" class:finger-folding={binary[1] === true} />
-    <div class="second" class:finger-folding={binary[2] === true} />
-    <div class="third" class:finger-folding={binary[3] === true} />
-    <div class="fourth" class:finger-folding={binary[4] === true} />
+    <div class="first" class:finger-folding={binary[1] === true}></div>
+    <div class="second" class:finger-folding={binary[2] === true}></div>
+    <div class="third" class:finger-folding={binary[3] === true}></div>
+    <div class="fourth" class:finger-folding={binary[4] === true}></div>
 
-    <div class="palm" />
+    <div class="palm"></div>
   </div>
 </div>
 

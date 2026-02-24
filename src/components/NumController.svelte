@@ -2,11 +2,13 @@
 import { decimalNum } from "../stores/decimalNumStores";
 import { currentMode } from "../stores/modeStores";
 
-let interval: NodeJS.Timer;
+let interval: NodeJS.Timeout | null = null;
 
 const stopInterval = () => {
-  clearInterval(interval);
-  interval = null;
+  if (interval != null) {
+    clearInterval(interval);
+    interval = null;
+  }
 };
 
 const autoIncrement = () => {
