@@ -22,24 +22,24 @@
 ## Development
 
 ### 0. 前提となる環境
-* Node.js (v22.2 or later)
-* Yarn
+* Node.js (v24 or later)
+* pnpm
 
 ### 1. インストール
 ```bash
 git clone https://github.com/SuzukiKatsuma/finger-binary-dojo.git
 cd finger-binary-dojo
-yarn install
+pnpm install
 ```
 
 ### 2. 開発サーバー
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ### 3. ビルド
 ```bash
-yarn build
+pnpm build
 ```
 
 
