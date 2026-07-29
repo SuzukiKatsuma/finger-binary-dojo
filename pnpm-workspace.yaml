@@ -1,3 +1,2 @@
 allowBuilds:
-  svelte-preprocess: true
   "@parcel/watcher": true
